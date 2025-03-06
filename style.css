@@ -1,6 +1,7 @@
 *{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 body{
     width: 100%;
@@ -8,7 +9,46 @@ body{
     background-image: url(Assets/fundo_dia.jpg);
     background-size: cover;
     background-position: 0 -100px;
+    backdrop-filter: brightness(.5);
 } 
-html.dark body {
-    background-image: url(Assets/fundo_noite);
+main{
+   display: grid;
+   gap: 24px;
+   padding: 48px 28px;
 }
+#about{
+    padding: 24px;
+    width: 100%;
+    max-width: 800px;
+    background-color: #e4dccdb7;
+    border-radius: 24px;
+    margin: 0 auto;
+    display: grid;
+    gap:12px; 
+}
+
+#pontos_turisticos {
+   display: flex;
+   gap: 24px; 
+}
+
+#pontos_turisticos > div {
+    flex: 1;
+    background-color: #fff;
+    border: 1px solid #f4f4f4;
+    padding: 16px;
+    border-radius:  16px; ;
+}
+#pontos_turisticos img{
+    border-radius: 8px;
+    width: 100%;
+    aspect-ratio: 16/10;
+    object-fit: cover;
+}
+#pontos_turisticos h6{
+    font-size: 16px;
+}
+
+
+
+
